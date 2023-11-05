@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./Login";
 import OtpVerification from "./OtpVerification";
 import RestroLists from "./RestroLists";
-import RestroDetails from "./RestroDetails";
+import SingleRestro from "./SingleRestro";
 
 const Router = () => {
   return (
@@ -11,7 +11,7 @@ const Router = () => {
       <Route path="/" element={<Login />} />
       <Route path="/otp-verification" element={<OtpVerification />} />
       <Route path="/restro-lists" element={<RestroLists />} />
-      <Route path="/restro-details" element={<RestroDetails />} />
+      <Route path="/restro-details/:id" element={<SingleRestro />} />
     </Routes>
   );
 };

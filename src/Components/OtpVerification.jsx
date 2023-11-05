@@ -51,30 +51,7 @@ const OtpVerification = () => {
     }
   };
 
-  const fetchResturantData = async () => {
-    const token = localStorage.getItem("token");
-
-    try {
-      const response = await axios.get(
-        "https://staging.fastor.in/v1/m/restaurant?city_id=118&&",
-        {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        }
-      );
-
-      if (response.status === 200) {
-        dispatch(addData(response.data));
-      }
-    } catch (err) {
-      toast.error(err.message);
-    }
-  };
-
-  useEffect(() => {
-    fetchResturantData();
-  }, []);
+  
 
   return (
     <div>
