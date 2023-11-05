@@ -8,6 +8,8 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import { toast } from "react-toastify";
 import ResturantShops from "./ResturantShops";
+import RestroCarousal from "./RestroCarousal";
+import CategoryCarousal from "./CategoryCarousal";
 
 export const RestroLists = () => {
   const dispatch = useDispatch();
@@ -71,7 +73,7 @@ export const RestroLists = () => {
         </Grid>
       </Grid>
 
-      {/* <Grid container className="your-taste">
+      <Grid container className="your-taste">
         <Grid item>
           <p>Your Taste</p>
         </Grid>
@@ -85,7 +87,7 @@ export const RestroLists = () => {
         <Grid item xs={12}>
           <CategoryCarousal />
         </Grid>
-      </Grid> */}
+      </Grid>
       <Grid container className="your-taste">
         <Grid item>
           <p>Popular Ones</p>
