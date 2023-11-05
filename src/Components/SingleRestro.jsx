@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Card, Grid, Modal, Typography } from "@mui/material";
-import { useSelector } from "react-redux";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+
+import { useLocation, useNavigate } from "react-router-dom";
 import { BiSolidOffer } from "react-icons/bi";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import { AiFillStar } from "react-icons/ai";

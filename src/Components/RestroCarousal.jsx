@@ -3,9 +3,7 @@ import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Card } from "@mui/material";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { FitScreen } from "@mui/icons-material";
+
 
 const RestroCarousal = () => {
   const resturantData = useSelector((state) => state.restaurants.resturantData);

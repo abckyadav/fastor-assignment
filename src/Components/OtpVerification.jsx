@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button, FormControl, Grid } from "@mui/material";
 import { MuiOtpInput } from "mui-one-time-password-input";
 import "../Components/style.css";
@@ -7,7 +7,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { addToken } from "../Store/registrationSlice";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { addData } from "../Store/resturantSlice";
 
 const OtpVerification = () => {
   const [otp, setOtp] = useState("");

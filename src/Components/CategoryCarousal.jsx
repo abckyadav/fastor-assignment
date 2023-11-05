@@ -1,11 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Card } from "@mui/material";
 
 const CategoryCarousal = () => {
-  const resturantData = useSelector((state) => state.restaurants.resturantData);
 
   let offers = [
     "https://couponswala.com/blog/wp-content/uploads/2022/09/Food-Combo-Offers-696x392.jpg.webp",

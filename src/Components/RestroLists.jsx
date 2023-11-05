@@ -3,12 +3,10 @@ import { Grid } from "@mui/material";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { IoMdWallet } from "react-icons/io";
 import { BiSolidOffer } from "react-icons/bi";
-import RestroCarousal from "./RestroCarousal";
 import { addData } from "../Store/resturantSlice";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 import { toast } from "react-toastify";
-import CategoryCarousal from "./CategoryCarousal";
 import ResturantShops from "./ResturantShops";
 
 export const RestroLists = () => {
